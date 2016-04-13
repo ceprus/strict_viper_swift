@@ -1,0 +1,18 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+class {{ prefix }}{{ module_info.name }}Presenter: {{ prefix }}{{ module_info.name }}ModuleInputProtocol, {{ prefix }}{{ module_info.name }}ViewOutputProtocol, {{ prefix }}{{ module_info.name }}InteractorOutputProtocol {
+
+    weak var view: {{ prefix }}{{ module_info.name }}ViewInputProtocol!
+    var interactor: {{ prefix }}{{ module_info.name }}InteractorInputProtocol!
+    var router: {{ prefix }}{{ module_info.name }}RouterInputProtocol!
+
+    func viewIsReady() {
+
+    }
+}

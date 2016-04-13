@@ -1,0 +1,49 @@
+# Template information section
+name: "strict_viper_swift"
+summary: "Swift Strict VIPER module template with UIViewController playing as a View."
+author: "rsbw"
+version: "0.1.1"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# View layer
+- {name: View/ViewInputProtocol.swift,  path: Code/View/ViewInputProtocol.swift.liquid}
+- {name: View/ViewOutputProtocol.swift, path: Code/View/ViewOutputProtocol.swift.liquid}
+- {name: View/ViewController.swift, path: Code/View/ViewController.swift.liquid}
+
+# Presenter layer
+- {name: Presenter/ModuleInputProtocol.swift, path: Code/Presenter/ModuleInputProtocol.swift.liquid}
+- {name: Presenter/Presenter.swift, path: Code/Presenter/Presenter.swift.liquid}
+
+# Interactor layer
+- {name: Interactor/InteractorInputProtocol.swift, path: Code/Interactor/InteractorInputProtocol.swift.liquid}
+- {name: Interactor/InteractorOutputProtocol.swift, path: Code/Interactor/InteractorOutputProtocol.swift.liquid}
+- {name: Interactor/Interactor.swift, path: Code/Interactor/Interactor.swift.liquid}
+
+# Router layer
+- {name: Router/RouterInputProtocol.swift, path: Code/Router/RouterInputProtocol.swift.liquid}
+- {name: Router/Router.swift, path: Code/Router/Router.swift.liquid}
+
+# Configurator
+- {name: Configurator/Configurator.swift, path: Code/Configurator/Configurator.swift.liquid}
+- {name: Configurator/Initializer.swift, path: Code/Configurator/Initializer.swift.liquid}
+
+# The declarations for test files
+test_files:
+
+# Configurators tests
+- {name: Configurator/ConfiguratorTests.swift, path: Tests/Configurator/ConfiguratorTests.swift.liquid}
+
+# View tests
+- {name: View/ViewTests.swift, path: Tests/View/ViewTests.swift.liquid}
+
+# Interactor tests
+- {name: Interactor/InteractorTests.swift, path: Tests/Interactor/InteractorTests.swift.liquid}
+
+# Presenter tests
+- {name: Presenter/PresenterTests.swift, path: Tests/Presenter/PresenterTests.swift.liquid}
+
+# Router tests
+- {name: Router/RouterTests.swift, path: Tests/Router/RouterTests.swift.liquid}
